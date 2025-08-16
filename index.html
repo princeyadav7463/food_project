@@ -6,13 +6,15 @@
     <title>My food project</title>
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" href="vendors/css/queries.css">
   </head>
   <body>
     <header>
@@ -20,10 +22,10 @@
         <div class="row">
           <img class="logo" src="resources/css/img/logo.jpg" alt="" />
           <ul class="main-nav">
-            <li><a href="#">Food Delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">sign-up</a></li>
+            <li><a href="#features">Food Delivery</a></li>
+            <li><a href="#hiw">How it works</a></li>
+            <li><a href="#city">Our cities</a></li>
+            <li><a href="#signup">sign-up</a></li>
           </ul>
         </div>
       </nav>
@@ -32,11 +34,11 @@
           Goodbye junk food <br />
           Hello super healthy food
         </h1>
-        <a class="btn btn-full" href="#">I'm Hungry</a>
-        <a class="btn btn-ghost" href="#">Show Me More</a>
+        <a class="btn btn-full" href="#plans">I'm Hungry</a>
+        <a class="btn btn-ghost" href="#features">Show Me More</a>
       </div>
     </header>
-    <section class="section-features">
+    <section class="section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; Not fast food</h2>
         <p class="long-copy">
@@ -66,7 +68,6 @@
             each town to ensure that you're 100% happy.
           </p>
         </div>
-
         <div class="col span_1_of_4 box">
           <ion-icon class="icon-big" name="fast-food-outline"></ion-icon>
           <h3>100% organic</h3>
@@ -91,7 +92,7 @@
         </div>
       </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
       <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo">
@@ -137,14 +138,14 @@
         </li>
       </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>How it works &mdash; Simple as 1,2,3</h2>
       </div>
       <div class="row">
         <div class="col span_1_of_2 steps-box">
-          <img
-            src="resources/css/img/phone-image.jpg"
+          <img data-aos="slide-left" data-aos-duration="1000"
+            src="resources/css/img/prince.jpg"
             alt="phone-image"
             class="app-screen"
           />
@@ -171,7 +172,7 @@
         </div>
       </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -250,7 +251,7 @@
         </div>
       </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>Our customer can't live without us</h2>
       </div>
@@ -299,14 +300,14 @@
         </div>
       </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
       <div class="row">
         <div class="col span_1_of_3">
           <div class="plan-box">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
               <p class="plan-price-meal">That's only 13.9.5$ per meal</p>
@@ -350,7 +351,7 @@
         </div>
         <div class="col span_1_of_3">
           <div class="plan-box">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
               <h3>Pro</h3>
               <p class="plan-price">$199 <span>/ month</span></p>
               <p class="plan-price-meal">That's only 10.9.5$ per meal</p>
@@ -394,7 +395,7 @@
         </div>
         <div class="col span_1_of_3">
           <div class="plan-box">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
               <h3>Stater</h3>
               <p class="plan-price">19$ <span>/ meal</span></p>
               <p class="plan-price-meal">&nbsp;</p>
@@ -434,7 +435,7 @@
         </div>
       </div>
     </section>
-    <section class="section-form">
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
@@ -531,6 +532,63 @@
         </form>
       </div>
     </section>
+    <footer>
+      <div class="row">
+        <div class="col span_1_of_2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">IOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
+        </div>
+        <div class="col span_1_of_2">
+          <ul class="social-links">
+            <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+            <li><ion-icon class="twitter" name="logo-twitter"></ion-icon></li>
+            <li><ion-icon class="google" name="logo-google"></ion-icon></li>
+            <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p>Copyright &copy; 2025 by Omnifood. All rights reserved</p>
+      </div>
+    </footer>
+    
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
   </body>
 </html>
