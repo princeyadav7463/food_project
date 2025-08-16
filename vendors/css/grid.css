@@ -1,4 +1,5 @@
-/* html5reset.css - 01/11/2011 */
+/* html5re
+et.css - 01/11/2011 */
 
 html,
 body,
@@ -6,9 +7,9 @@ div,
 span,
 object,
 iframe,
-h1,
-h2,
-h3,
+/* h1, */
+/* h2, */
+/* h3, */
 h4,
 h5,
 h6,
@@ -22,7 +23,7 @@ code,
 del,
 dfn,
 em,
-img,
+/* img, */
 ins,
 kbd,
 q,
@@ -59,11 +60,10 @@ details,
 figcaption,
 figure,
 footer,
-header,
+/* header, */
 hgroup,
 menu,
 nav,
-section,
 summary,
 time,
 mark,
@@ -88,7 +88,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+/* header, */
 hgroup,
 menu,
 nav,
@@ -100,7 +100,7 @@ nav ul {
   list-style: none;
 }
 
-blockquote,
+/* blockquote,
 q {
   quotes: none;
 }
@@ -111,7 +111,7 @@ q:before,
 q:after {
   content: "";
   content: none;
-}
+} */
 
 a {
   margin: 0;
@@ -161,10 +161,10 @@ hr {
   padding: 0;
 }
 
-input,
+/* input,
 select {
   vertical-align: middle;
-}
+} */
 
 /*  GRID OF TWO   ============================================================================= */
 
